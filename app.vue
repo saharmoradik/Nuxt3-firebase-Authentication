@@ -1,5 +1,7 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <v-alert type="info">Welcome Vuetify </v-alert>
+
+    <br />
   </div>
 </template>

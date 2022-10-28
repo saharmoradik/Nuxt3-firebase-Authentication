@@ -7,4 +7,12 @@ export default defineNuxtConfig({
   privateRuntimeConfig: {
     FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
   },
+  //--------------vuetify config------------------
+  css: ["vuetify/lib/styles/main.sass"],
+  build: { transpile: ["vuetify"] },
+  vite: {
+    define: {
+      "process.env.DEBUG": false,
+    },
+  },
 });
