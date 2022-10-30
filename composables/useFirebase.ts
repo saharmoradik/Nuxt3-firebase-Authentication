@@ -1,5 +1,6 @@
 //https://firebase.google.com/docs/auth/web/start?hl=en&authuser=0
 
+import { async } from "@firebase/util";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -52,4 +53,11 @@ export const initUser = async () => {
       // ...
     }
   });
+};
+
+export const signOutUser = async () => {
+  const auth = getAuth();
+  const result = await auth.signOut();
+  console.log("sign out", result);
+  return result;
 };
