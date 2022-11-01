@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p><NuxtLink to="/secret">Go to secret page</NuxtLink></p>
     <v-alert type="info">Welcome Vuetify </v-alert>
     <v-btn @click="singIn" v-if="!firebaseUser">Sign in</v-btn>
     <v-btn @click="singOut" v-if="firebaseUser">Sign out</v-btn>
