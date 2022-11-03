@@ -23,10 +23,6 @@
 </template>
 
 <script setup>
-definePageMeta({
-  middleware: ["auth"],
-});
-
 const firebaseUser = useFirebaseUser();
 
 const credentials = ref();
